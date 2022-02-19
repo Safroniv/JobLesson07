@@ -9,14 +9,19 @@ namespace JobLesson07Part01
     {
         static void Main()
         {
+            Console.WriteLine("Input b");
+            int b = Int32.Parse(Console.ReadLine());
             int a = 10;
-            int b = a;
+            
             if (b == a)
             {
                 Console.WriteLine("Hallo World");
             }
-
-            
+            else
+            {
+                Console.WriteLine("b not a");
+            }
+            Console.ReadLine();
         }
     }
 }
