@@ -9,7 +9,13 @@ namespace JobLesson07Part01
     {
         static void Main()
         {
-            Console.WriteLine("Привет Мир!");
+            int a = 10;
+            int b = a;
+            if (b == a)
+            {
+                Console.WriteLine("Hallo World");
+            }
+            
         }
     }
 }
