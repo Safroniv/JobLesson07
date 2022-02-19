@@ -1,0 +1,35 @@
+using System;
+using System.Text;
+
+namespace JobLesson07Part01
+{
+    internal class Program
+    {
+        static int Main()
+        {
+            //Занятие #7
+            string report = $"Отчёт {DateTime.Now}";
+            while(true)
+                {
+                report += $"\r\nПродукт";
+            }
+            string report2 = Print();
+            if (report2 is null)
+            {
+                return -1;
+            }
+            return 0;
+        }
+        static string Print()
+        {
+            StringBuilder report = new StringBuilder();
+            report.AppendLine($"Отчёт {DateTime.Now}");
+            for (int i =0; i<100; i++)
+            {
+                report.AppendLine($"Продукт #{i}");
+                
+            }
+            return report.ToString();
+        }
+    }
+}
