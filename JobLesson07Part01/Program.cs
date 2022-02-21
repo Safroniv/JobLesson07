@@ -9,6 +9,7 @@ namespace JobLesson07Part01
     {
         static void Main()
         {
+            //Проект пересобран в DotPeek
             Console.WriteLine("Input b");
             int b = Int32.Parse(Console.ReadLine());
             int a = 10;
